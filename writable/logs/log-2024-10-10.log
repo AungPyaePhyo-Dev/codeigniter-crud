@@ -1,0 +1,911 @@
+CRITICAL - 2024-10-10 05:56:15 --> Error: Call to undefined method CodeIgniter\HTTP\Response::json()
+[Method: GET, Route: api/test]
+in APPPATH/Config/Routes.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 05:59:03 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::http_response_code()
+[Method: GET, Route: api/test]
+in APPPATH/Config/Routes.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 06:00:27 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::respond()
+[Method: GET, Route: api/test]
+in APPPATH/Config/Routes.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 06:00:59 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::respond()
+[Method: GET, Route: api/test]
+in APPPATH/Config/Routes.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 06:01:00 --> Error: Call to undefined method CodeIgniter\Router\RouteCollection::respond()
+[Method: GET, Route: api/test]
+in APPPATH/Config/Routes.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(877): CodeIgniter\Router\RouteCollection->{closure}()
+ 2 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 06:48:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "inc.home"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(9): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 06:51:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/inc/header.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(9): view()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:02:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:02:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:04:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:04:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:04:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:04:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:05:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:05:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:05:38 --> Error: Class "CodeIgniter\Database\MySQL\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 143.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:05:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:05:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:06:13 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:06:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:06:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:06:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:06:46 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:06:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:06:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:06:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:06:59 --> Error: Class "CodeIgniter\Database\MySQL\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 143.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:06 --> Error: Class "CodeIgniter\Database\Mysql\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 143.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:07 --> Error: Class "CodeIgniter\Database\Mysql\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 143.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:07 --> Error: Class "CodeIgniter\Database\Mysql\Connection" not found
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/Database.php on line 143.
+ 1 SYSTEMPATH/Database/Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:07:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(186): mysqli->real_connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#6 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2024-10-10 07:07:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ERROR - 2024-10-10 07:07:28 --> mysqli_sql_exception: No database selected in /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /home/aung/Practice/CI/CI_CRUD/system/Database/MySQLi/Connection.php(312): mysqli->query()
+#1 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/aung/Practice/CI/CI_CRUD/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+#4 /home/aung/Practice/CI/CI_CRUD/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/aung/Practice/CI/CI_CRUD/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/aung/Practice/CI/CI_CRUD/app/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+#7 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#8 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#9 /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /home/aung/Practice/CI/CI_CRUD/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/aung/Practice/CI/CI_CRUD/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#13 {main}
+CRITICAL - 2024-10-10 07:07:28 --> CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:28 --> [Caused by] mysqli_sql_exception: No database selected
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Home.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+CRITICAL - 2024-10-10 07:07:36 --> ErrorException: Undefined variable $users
+[Method: GET, Route: /]
+in APPPATH/Views/home.php on line 38.
+ 1 APPPATH/Views/home.php(38): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/aung/Practice/CI/CI_CRUD/app/Views/home.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(20): view()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 07:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 07:44:40 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::saveUser(), 0 passed in /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: saveUser]
+in APPPATH/Controllers/Home.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->saveUser()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 07:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 07:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:24:56 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::getSingleUser(), 0 passed in /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: getSingleUser/5]
+in APPPATH/Controllers/Home.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getSingleUser()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:25:43 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::getSingleUser(), 0 passed in /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: getSingleUser/5]
+in APPPATH/Controllers/Home.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getSingleUser()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:26:38 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::getSingleUser(), 0 passed in /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: getSingleUser/5]
+in APPPATH/Controllers/Home.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getSingleUser()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:26:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::getSingleUser(), 0 passed in /home/aung/Practice/CI/CI_CRUD/system/CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: getSingleUser/5]
+in APPPATH/Controllers/Home.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getSingleUser()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:28:16 --> ErrorException: Array to string conversion
+[Method: GET, Route: getSingleUser/5]
+in APPPATH/Controllers/Home.php on line 36.
+ 1 APPPATH/Controllers/Home.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->getSingleUser()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-10 08:37:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: updateUser]
+in SYSTEMPATH/Model.php on line 456.
+ 1 SYSTEMPATH/BaseModel.php(1028): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH/Model.php(865): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Controllers/Home.php(47): CodeIgniter\Model->update()
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->updateUser()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2024-10-10 08:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 08:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:15:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-10 09:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
